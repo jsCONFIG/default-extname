@@ -1,0 +1,32 @@
+{
+    "name": "default-extname",
+    "version": "0.0.1",
+    "description": "get file's extname",
+    "main": "index.js",
+    "scripts": {},
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:jsCONFIG/default-extname.git"
+    },
+    "keywords": [
+        "extname",
+        "default extname"
+    ],
+    "author": {
+        "name": "BottleLiu",
+        "email": "clpliuping@126.com"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://www.opensource.org/licenses/mit-license.php"
+        }
+    ],
+    "readmeFilename": "README.md",
+    "bugs": {
+        "url": "https://github.com/jsCONFIG/default-extname/issues"
+    },
+    "dependencies": {
+        "mime.json": "1.0.10"
+    }
+}
