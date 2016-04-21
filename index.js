@@ -5,11 +5,11 @@ var utils = require('./utils');
 var defaultExtname = function (opt) {
     this.opt = utils.smartyMerge({
         defaultType: 'js',
-        skipList: []
+        extraTypeList: []
     }, opt || {});
 };
 
-defaultExtname.prototype.extname = function (filePath) {
+defaultExtname.prototype.resolve = function (filePath) {
     if (typeof filePath !== 'string') {
         return undefined;
     }
@@ -25,7 +25,7 @@ defaultExtname.prototype.extname = function (filePath) {
         return extnameStr;
     }
 
-    if (opt.skipList.indexOf(pureExtnameStr) !== -1) {
+    if (opt.extraTypeList.indexOf(pureExtnameStr) !== -1) {
         return extnameStr;
     }
 
