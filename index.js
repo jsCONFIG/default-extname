@@ -49,6 +49,6 @@ defaultExtname.prototype.resolveFilePath = function (filePath) {
     return filePath;
 };
 
-module.export = function (opt) {
+module.exports = function (opt) {
     return new defaultExtname(opt);
 };
