@@ -32,6 +32,23 @@ defaultExtname.prototype.resolve = function (filePath) {
     return fullDefaultType;
 };
 
+defaultExtname.prototype.resolveFilePath = function (filePath) {
+    if (typeof filePath !== 'string') {
+        return filePath;
+    }
+    var opt = this.opt;
+    var fullDefaultType = '.' + opt.defaultType;
+    var extnameStr = path.extname(filePath);
+    if (extnameStr === '') {
+        return extnameStr + fullDefaultType;
+    }
+    var extname = this.resolve(filePath);
+    if (extnameStr !== extname) {
+        return filePath + extname;
+    }
+    return filePath;
+};
+
 module.export = function (opt) {
     return new defaultExtname(opt);
 };
