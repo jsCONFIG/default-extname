@@ -40,7 +40,7 @@ defaultExtname.prototype.resolveFilePath = function (filePath) {
     var fullDefaultType = '.' + opt.defaultType;
     var extnameStr = path.extname(filePath);
     if (extnameStr === '') {
-        return extnameStr + fullDefaultType;
+        return filePath + fullDefaultType;
     }
     var extname = this.resolve(filePath);
     if (extnameStr !== extname) {
