@@ -1,6 +1,6 @@
 {
     "name": "default-extname",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "get file's extname",
     "main": "index.js",
     "scripts": {},
