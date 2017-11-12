@@ -16,12 +16,7 @@
         "name": "BottleLiu",
         "email": "clpliuping@126.com"
     },
-    "licenses": [
-        {
-            "type": "MIT",
-            "url": "http://www.opensource.org/licenses/mit-license.php"
-        }
-    ],
+    "license": "GPL-3.0",
     "readmeFilename": "README.md",
     "bugs": {
         "url": "https://github.com/jsCONFIG/default-extname/issues"
